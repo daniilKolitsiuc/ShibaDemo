@@ -1170,7 +1170,7 @@ $(document).ready(function() {
 			fetchOrDownloadAndStore(db, Module.locateFile('https://dl.dropboxusercontent.com/s/wf1iyk8ofnx6tks/ShibaWeb.data?dl=0'), 'arraybuffer').then(function(dataArrayBuffer) {
 				Module['preloadedPackages'] = {};
 				Module['preloadedPackages'][Module.locateFile('https://dl.dropboxusercontent.com/s/wf1iyk8ofnx6tks/ShibaWeb.data?dl=0')] = dataArrayBuffer;
-				return dataJsDownload.then(addScriptToDom)
+				return dataJsDownload.then(addScriptToDom);
 			});
 
 		// ----------------------------------------
